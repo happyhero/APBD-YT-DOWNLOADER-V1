@@ -84,7 +84,7 @@ if(isset($_POST['submit_url'])) {
 								<td><?php echo $stream->type; ?></td>
 								<td><?php echo $stream->size; ?></td>
 								<td><?php echo $stream->quality; ?></td>
-								<td><a class="btn btn-success" href="<?php echo $stream->url . '&' . echo $videoTitle; ?>" target="_blank" download>Download</a></td>
+								<td><a class="btn btn-success" href="<?php echo $stream->url . '&title=' . $videoTitle; ?>" target="_blank" download>Download</a></td>
 							</tr>
 							<?php } ?>
 						</tbody>
@@ -109,7 +109,7 @@ if(isset($_POST['submit_url'])) {
 								<td><?php echo $stream->type; ?></td>
 								<td><?php echo $stream->size; ?></td>
 								<td><?php echo $stream->quality; ?></td>
-								<td><a class="btn btn-success" href="<?php echo $stream->url . '&' . echo $videoTitle; ?>" target="_blank" download>Download</a></td>
+								<td><a class="btn btn-success" href="<?php echo $stream->url . '&title=' .  $videoTitle; ?>" target="_blank" download>Download</a></td>
 							</tr>
 							<?php endforeach; ?>
 						</tbody>
